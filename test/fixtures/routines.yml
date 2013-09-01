@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  day: MyString
+  start_time: 2013-09-01 12:07:02
+  end_time: 2013-09-01 12:07:02
+  sub_name: MyString
+  teacher_name: MyString
+  faculty: MyString
+  year: MyString
+  section: MyString
+
+two:
+  day: MyString
+  start_time: 2013-09-01 12:07:02
+  end_time: 2013-09-01 12:07:02
+  sub_name: MyString
+  teacher_name: MyString
+  faculty: MyString
+  year: MyString
+  section: MyString

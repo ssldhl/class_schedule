@@ -1,0 +1,33 @@
+<%= form_for @resource, :url => viewschedule_path do |f| %>
+  <% if @routine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@routine.errors.count, "error") %> prohibited this routine from being saved:</h2>
+
+      <ul>
+      <% @routine.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :day %><br />
+    <%= f.select :day, [["Sunday", "Sunday"], ["Monday", "Monday"], ["Tuesday", "Tuesday"], ["Wednesday", "Wednesday"], ["Thursday", "Thursday"], ["Friday", "Friday"], ["Saturday", "Saturday"]] %>
+  </div>
+  <div class="field">
+    <%= f.label :faculty %><br />
+    <%= f.select :faculty, [["Computer", "Computer"], ["Electronics", "Electronics"], ["Electrical", "Electrical"], ["Civil", "Civil"]].sort %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.select :year, [["First", "First"], ["Second", "Second"], ["Third", "Third"], ["Fourth", "Fourth"]].sort %>
+  </div>
+  <div class="field">
+    <%= f.label :section %><br />
+    <%= f.select :section, [["A", "A"], ["B", "B"], ["C", "C"]].sort%>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

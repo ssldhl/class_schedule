@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Day:</b>
+  <%= @routine.day %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%= @routine.start_time.strftime('%H:%M') %>
+</p>
+
+<p>
+  <b>End time:</b>
+  <%= @routine.end_time.strftime('%H:%M')  %>
+</p>
+
+<p>
+  <b>Sub name:</b>
+  <%= @routine.sub_name %>
+</p>
+
+<p>
+  <b>Teacher name:</b>
+  <%= @routine.teacher_name %>
+</p>
+
+<p>
+  <b>Faculty:</b>
+  <%= @routine.faculty %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @routine.year %>
+</p>
+
+<p>
+  <b>Section:</b>
+  <%= @routine.section %>
+</p>
+
+
+<%= link_to 'Edit', edit_routine_path(@routine) %> |
+<%= link_to 'Back', routines_path %>
